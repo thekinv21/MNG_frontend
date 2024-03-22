@@ -17,14 +17,13 @@ const Login: FC = () => {
 	return (
 		<View className='flex-1  items-center justify-center'>
 			<View className='flex flex-col items-center justify-center'>
-				<Image className='h-80 w-80' source={ImagesAssets.loginLogo} />
+				<Image className='mt-40 h-80 w-80' source={ImagesAssets.loginLogo} />
 			</View>
 
 			<View className='w-full px-8'>
 				<TextInput
 					value={rest.email}
 					onChangeText={text => rest.setEmail(text)}
-					showSoftInputOnFocus={false}
 					placeholder='E-posta giriniz..'
 					autoCapitalize='none'
 					className={
@@ -35,7 +34,6 @@ const Login: FC = () => {
 				<TextInput
 					value={rest.password}
 					onChangeText={text => rest.setPassword(text)}
-					showSoftInputOnFocus={false}
 					placeholder='Şifre giriniz...'
 					autoCapitalize='none'
 					secureTextEntry={true}

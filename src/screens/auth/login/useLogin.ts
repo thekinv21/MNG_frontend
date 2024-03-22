@@ -17,8 +17,8 @@ export const useLogin = () => {
 
 	const handleLogin = async () => {
 		const payload: ILogin = {
-			email: email,
-			password: password
+			email: email.trim(),
+			password: password.trim()
 		}
 
 		try {
